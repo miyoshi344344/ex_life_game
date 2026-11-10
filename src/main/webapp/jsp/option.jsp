@@ -164,8 +164,8 @@
       <div class="label">ニンニク入れますか？</div>
       <div class="choices">
         <label><input type="radio" name="garlic">抜き</label>
-        <label><input type="radio" name="garlic" checked>はい</label>
-        <label><input type="radio" name="garlic">全マシ</label>
+        <label><input type="radio" name="garlic">はい</label>
+        <label><input type="radio" name="garlic" checked>全マシ</label>
       </div>
 
     </div>

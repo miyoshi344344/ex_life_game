@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <title>プレイヤー設定 | 人生ゲーム</title>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/css/common.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/css/player.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/css/create.css">
 </head>
 <body>
 

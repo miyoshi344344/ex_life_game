@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import life.dao.data_check;
+import life.dao.DataCheck;
 
 /**
  * タイトル画面を表示する。
@@ -25,7 +25,7 @@ public class TitleServlet extends HttpServlet {
 
         boolean hasSaveData;
         try {
-            hasSaveData = data_check.hasPlayers();
+            hasSaveData = DataCheck.hasPlayers();
         } catch (Exception ex) {
             // DB に問題があるときは、エラー画面にせずに 500 エラーとして扱う
             throw new ServletException("セーブデータの確認に失敗しました", ex);

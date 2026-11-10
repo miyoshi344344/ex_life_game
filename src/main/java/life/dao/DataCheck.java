@@ -8,7 +8,7 @@ import java.sql.SQLException;
 /**
  * players テーブルを操作する。
  */
-public class data_check {
+public class DataCheck {
 
     /**
      * プレイヤーのデータが1件以上あるか（続きから遊べるか）を調べる。

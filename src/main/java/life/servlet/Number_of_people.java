@@ -18,7 +18,9 @@ public class Number_of_people extends HttpServlet {
 
     }
 
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		
         request.getRequestDispatcher("/jsp/Number_of_people.jsp").forward(request, response);
 	}
 

@@ -29,7 +29,7 @@ public class MaingameServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		
-        request.getRequestDispatcher("/jsp/Number_of_people.jsp").forward(request, response);
+        request.getRequestDispatcher("/jsp/maingame.jsp").forward(request, response);
 	}
 
 }

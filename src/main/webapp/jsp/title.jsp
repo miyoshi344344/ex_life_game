@@ -3,7 +3,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>人生ゲームを始めようこれ動いているの</title>
+<title>人生ゲームを始めよう動いてるよ</title>
 <style>
   body {
     margin: 0;

@@ -23,7 +23,6 @@ public class Number_of_people extends HttpServlet {
 
     }
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String url = "jdbc:sqlite:/Volumes/Macintosh HD/Users/Shared/db_server/life_game.db";
 		
 		String sql = "DELETE FROM players";
 		

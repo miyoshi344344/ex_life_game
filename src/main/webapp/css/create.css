@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/* プレイヤー設定：1P=左上, 2P=右上, 3P=左下, 4P=右下 */
+.players {
+  display: grid;
+  grid-template-columns: 226px 226px;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+/* 名前を入れる箱（枠の見た目は common.css の .frame） */
+.slot {
+  width: 220px;
+  padding: 20px 0;
+}
+
+.slot b {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 28px;
+}
+
+.slot input {
+  width: 160px;
+  padding: 4px;
+  text-align: center;
+  font: inherit;
+  font-size: 16px;
+  color: #333;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #333;
+}
+
+.slot input:focus {
+  outline: none;
+}
+
+/* スタートボタンを中央に置く */
+.start {
+  margin: 0 auto;
+}

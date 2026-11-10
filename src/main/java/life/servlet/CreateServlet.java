@@ -35,7 +35,7 @@ public class CreateServlet extends HttpServlet {
             }
         }
 
-        response.sendRedirect(request.getContextPath() + "/jsp/main_game.jsp");
+        response.sendRedirect(request.getContextPath() + "/jsp/maingame.jsp");
     }
 }
 

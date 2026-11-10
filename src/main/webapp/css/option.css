@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/* オプション画面は項目が多いので、見出しを小さめにする */
+.screen h1 {
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+/* 左に項目名、右に選択肢 */
+.settings {
+  display: grid;
+  grid-template-columns: 240px auto;
+  row-gap: 28px;
+  align-items: center;
+  text-align: left;
+}
+
+.settings .label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* 選択肢を横に並べる */
+.choices {
+  display: flex;
+  font-size: 17px;
+}
+
+/* 幅をそろえて、選択肢を縦の列にそろえる */
+.choices label {
+  width: 170px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+/* ラジオボタンとスライダーの色を文字色に合わせる */
+input[type="radio"],
+input[type="range"] {
+  accent-color: #333;
+}
+
+input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+}
+
+.volume {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 17px;
+}
+
+.volume input {
+  width: 320px;
+}
+
+/* 戻るボタンを中央に置く */
+.back {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}

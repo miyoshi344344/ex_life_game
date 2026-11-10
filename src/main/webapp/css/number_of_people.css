@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/* 人数選択：ボタンを2列にする */
+.menu {
+  display: grid;
+  grid-template-columns: 226px 226px;
+  gap: 24px;
+}

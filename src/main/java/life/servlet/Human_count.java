@@ -26,7 +26,7 @@ public class Human_count extends HttpServlet {
 		
 		request.setAttribute("players", players);
 		
-		request.getRequestDispatcher("/jsp/Create.jsp").forward(request, response);
+		request.getRequestDispatcher("/jsp/create.jsp").forward(request, response);
 	}
 
 }

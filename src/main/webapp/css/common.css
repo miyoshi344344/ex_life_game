@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+/* =========================================
+   全画面で共通のスタイル
+   ========================================= */
+
+/* 画面の中央に中身を置く */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fffdf8;
+  color: #333;
+  font-family: "Hiragino Maru Gothic ProN", "Hiragino Sans", "Meiryo", sans-serif;
+}
+
+/* 各画面の外枠 */
+.screen {
+  padding: 48px 24px;
+  text-align: center;
+}
+
+/* 画面の見出し */
+.screen h1 {
+  margin: 0 0 48px;
+  font-size: 56px;
+  letter-spacing: 0.1em;
+}
+
+/* 黒枠＋影の四角（ボタンや入力欄の箱で共通） */
+.frame,
+.btn {
+  background: #fffdf8;
+  border: 3px solid #333;
+  border-radius: 8px;
+  box-shadow: 3px 3px 0 #333;
+}
+
+/* ボタン（<a> でも <button> でも同じ見た目にする） */
+.btn {
+  display: block;
+  box-sizing: content-box;
+  width: 220px;
+  padding: 12px 0;
+  font-family: inherit;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+/* 背の高いボタン */
+.btn-large {
+  padding: 20px 0;
+}
+
+/* マウスを乗せたときだけ少し暗くする */
+.btn:hover {
+  background: #f0ece2;
+}
+
+/* 押したときに沈む */
+.btn:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0 0 0 #333;
+}
+
+/* 押せないボタン */
+.btn.disabled,
+.btn.disabled:hover,
+.btn.disabled:active {
+  color: #aaa;
+  background: #fffdf8;
+  border-color: #ccc;
+  box-shadow: none;
+  transform: none;
+  cursor: not-allowed;
+}

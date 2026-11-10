@@ -32,7 +32,7 @@ public class Number_of_people extends HttpServlet {
 			
 			pstmt.executeUpdate();
 			
-			 request.getRequestDispatcher("/jsp/Number_of_people.jsp").forward(request, response);
+			 request.getRequestDispatcher("/jsp/number_of_people.jsp").forward(request, response);
 		} catch (ClassNotFoundException |SQLException e) {
 			throw new ServletException("ゲームデータの初期化に失敗しました", e);
 		}

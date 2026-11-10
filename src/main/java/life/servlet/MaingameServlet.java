@@ -31,5 +31,4 @@ public class MaingameServlet extends HttpServlet {
 		
         request.getRequestDispatcher("/jsp/maingame.jsp").forward(request, response);
 	}
-
 }

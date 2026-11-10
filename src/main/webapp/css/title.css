@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/* タイトル画面：ボタンを縦に並べる */
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}

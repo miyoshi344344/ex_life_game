@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -61,6 +62,19 @@
     box-shadow: 0 0 0 #333;
   }
 
+  /* 押せないボタン（セーブデータがないときのコンティニュー） */
+  .menu .disabled {
+    display: block;
+    width: 220px;
+    padding: 12px 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: #aaa;
+    background: #fffdf8;
+    border: 3px solid #ccc;
+    border-radius: 8px;
+    cursor: not-allowed;
+  }
 </style>
 </head>
 <body>
@@ -71,7 +85,17 @@
     <nav class="menu">
       <%-- ★ 遷移先は各Servletの @WebServlet の名前に合わせて書き換える --%>
       <a href="${pageContext.request.contextPath}/number_of_people">ニューゲーム</a>
-      <a href="${pageContext.request.contextPath}/continue">コンティニュー</a>
+
+      <%-- セーブデータがあるときだけ、コンティニューを押せるようにする --%>
+      <c:choose>
+        <c:when test="${hasSaveData}">
+          <a href="${pageContext.request.contextPath}/continue">コンティニュー</a>
+        </c:when>
+        <c:otherwise>
+          <span class="disabled">コンティニュー</span>
+        </c:otherwise>
+      </c:choose>
+
       <a href="${pageContext.request.contextPath}/option">オプション</a>
     </nav>
   </div>

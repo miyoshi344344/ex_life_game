@@ -70,7 +70,7 @@
 
     <nav class="menu">
       <%-- ★ 遷移先は各Servletの @WebServlet の名前に合わせて書き換える --%>
-      <a href="${pageContext.request.contextPath}/play">プレイ</a>
+      <a href="${pageContext.request.contextPath}/number_of_people">プレイ</a>
       <a href="${pageContext.request.contextPath}/option">オプション</a>
     </nav>
   </div>

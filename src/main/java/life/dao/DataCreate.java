@@ -15,18 +15,18 @@ public class DataCreate {
 			
 			ps.setString(1, id);
 			ps.setString(2, name);
-
-            int num = ps.executeUpdate();
-
-            System.out.println(num + " record was inserted.");
-
-        } catch (Exception ex) {
-            ex.printStackTrace();
-
-        } finally {
-            DatabaseManager.destroy(ps);
-            DatabaseManager.destroy(conn);
-        }
-    }
+			
+			int num = ps.executeUpdate();
+			
+			System.out.println(num + " record was inserted.");
+			
+		} catch (Exception ex) {
+			ex.printStackTrace();
+			
+		} finally {
+			DatabaseManager.destroy(ps);
+			DatabaseManager.destroy(conn);
+		}
+	}
 }
 

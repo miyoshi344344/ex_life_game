@@ -37,6 +37,6 @@
       </table>
     </c:otherwise>
   </c:choose>
-
+<a href="${pageContext.request.contextPath}/jsp/roulette.jsp">ルーレットボタン</a>
 </body>
 </html>
